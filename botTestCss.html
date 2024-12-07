@@ -5,37 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dialogflow Messenger</title>
     <style>
-        /* Stili per adattare la finestra di chat */
-        #df-messenger {
-            width: 100% !important;  /* Imposta la larghezza al 100% per adattarsi al contenitore */
-            height: 100vh !important; /* Imposta l'altezza per riempire tutta la finestra del browser */
-            max-width: 100% !important; /* Assicura che non superi la larghezza della pagina */
-            min-width: 320px;  /* Imposta una larghezza minima per dispositivi piccoli */
-            box-sizing: border-box;  /* Per gestire meglio i margini e il padding */
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 9999;  /* Mantiene la finestra di chat sopra gli altri elementi */
-        }
-
-        #df-messenger-chat-window {
-            width: 100% !important;  /* Adatta la finestra di chat al contenitore */
-            max-width: 600px;  /* Imposta una larghezza massima per evitare che diventi troppo grande */
-            height: auto !important;  /* Permette alla finestra di cambiare altezza in base al contenuto */
-            margin: 0 auto; /* Centra la finestra orizzontalmente */
-        }
-
-        @media (max-width: 768px) {
-            #df-messenger {
-                width: 100% !important;  /* Su dispositivi mobili, usa tutta la larghezza disponibile */
-                max-width: 100%;
-            }
-
-            #df-messenger-chat-window {
-                width: 100% !important;
-            }
-        }
+        
     </style>
 </head>
 <body>
