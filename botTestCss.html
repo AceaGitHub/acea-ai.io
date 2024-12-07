@@ -1,26 +1,60 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dialogflow Messenger</title>
-    <style>
-        
-    </style>
-</head>
-<body>
-    <!-- Il contenitore di Dialogflow Messenger -->
-    <df-messenger project-id="aceactichatareti001" agent-id="46418b35-ff46-4553-9c21-f0bd8a2399cb" 
-    max-query-length="-1" language-code="it" storage-option="none" intent="Ciao">
-        <df-messenger-chat-bubble  chat-title="MyAcea Assistant" expanded="true" allow-fullscreen="always"
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Areti Assistant</title>
+  <link rel="stylesheet"
+    href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css" />
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <df-messenger project-id="aceactichatareti001" agent-id="46418b35-ff46-4553-9c21-f0bd8a2399cb" 
+    max-query-length="-1" language-code="it" storage-option="none" intent="Ciao"  >
+    <df-messenger-chat-bubble  chat-title="MyAcea Assistant" expanded="true" 
       chat-title-icon="https://aceagithub.github.io/acea-ai.io/IMG/areti_logo.svg" )>
     </df-messenger-chat-bubble>
   </df-messenger>
+  <style>
+   df-messenger-chat-bubble {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: orange;
+      --df-messenger-message-bot-background: #fff;
+      --df-messenger-chat-bubble-close-icon-size: 0 px;
+      --df-messenger-button-titlebar-close-icon: none;
+      --df-messenger-titlebar-icon-width: auto;
+      --df-messenger-titlebar-icon-height: 32px;
+      --df-messenger-chat-bubble-close-icon-size:0px;
+      bottom: 16px;
+      right: 16px;
+    }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* display: none; */
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+  </style>
+</head>
 
-    <!-- Include Dialogflow Messenger -->
-    <script
-        type="text/javascript"
-        src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"
-    ></script>
+<body>
+  <style>
+  
+  </style>
+
 </body>
+
 </html>
