@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fl&uacute; Fiora</title>
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'it'; 
+			
+			window.addEventListener("onEmbeddedMessagingReady", () => {
+					embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({'APISITOWEB' : 'FIOR'});
+				}
+			);
+
+			embeddedservice_bootstrap.init(
+				'00D5I000003ekOK',
+				'Flu_Acqua',
+				'https://aceaidrico.my.site.com/ESWFluAcqua1716203526290',
+				{
+					scrt2URL: 'https://aceaidrico.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://aceaidrico.my.site.com/ESWFluAcqua1716203526290/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</head>
+
+<body>
+  <style>
+  
+  </style>
+
+</body>
+
+</html>
